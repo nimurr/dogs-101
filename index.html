@@ -3,45 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pet Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/56-dog-png-image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
             <!-- header section -->
     <section>
         <nav class="w-10/12 m-auto flex justify-between items-center py-4 ">
-            <div>
-                <h1 class="font-semibold">PETWORLD</h1>
+            <div class="">
+                <h1 class="font-semibold"><i class="text-3xl text-[#F8D57E]">P</i>ETWORLD</h1>
             </div>
-            <div class="flex gap-5">
+            <div class="hidden md:flex gap-5">
                 <button class="py-2 px-5 rounded text-sm">Sign Up</button>
-                <button class="bg-blue-600 text-white py-2 px-5 rounded text-sm">Login</button>
+                <button class="bg-blue-600 hover:bg-[#F8D57E] text-white py-2 px-5 rounded text-sm">Login</button>
             </div>
+            <i class="fa fa-bars md:hidden text-2xl" aria-hidden="true"></i>
         </nav>
     </section>
                 <!-- hero section -->
 
         <section class="bg-[#F7F5FD]">
-            <div class="flex items-center justify-between w-10/12 m-auto py-10">
+            <div class="flex flex-col py-20 md:flex-row lg:flex-row gap-8 items-center justify-between w-10/12 m-auto lg:py-32">
                 <div class="">
                     <h1 class="text-5xl font-bold ">Pet Store & Beyond</h1>
                     <p class="py-4 text-[#999999]">This is a sample landing page, created with Figma and <br> Anima. No coding involved.</p>
-                    <button class="bg-[#F8D57E] text-white py-1 px-2 rounded">Get Started</button>
+                    <button class="bg-[#F8D57E] hover:bg-blue-600 text-white py-1 px-2 rounded">Get Started</button>
                 </div>
-                <div>
-                    <img class="w-96 py-20" src="img/hero-dog.jpg" alt="">
+                <div >
+                    <img class=" w-96 h-72 lg:h-80 rounded-md " src="img/hero-dog.jpg" alt="">
                 </div>
             </div>
         </section>
                     <!-- pet video section -->
         
         <section class="bg-[#F2FAF8]">
-            <div class="py-20">
+            <div class="w-10/12 m-auto py-16 lg:py-20 ">
                 <video controls class="rounded mx-auto" src="video/Free Pet Videos- 4K & HD - No Watermark - Download Now.mp4"></video>
             </div>
         </section>
+                    <!-- brand section -->
+
+        <section>
+            <div class="w-10/12 grid grid-cols-3 lg:grid-cols-6 gap-10 md:grid-cols-3 m-auto items-center py-10">
+                <img src="img/Nestle.svg" alt="">
+                <img src="img/Amazon_logo 2.svg" alt="">
+                <img src="img/Apple_logo_black 1.svg" alt="">
+                <img src="img/Frame.svg" alt="">
+                <img src="img/Walmart_logo 2.svg" alt="">
+                <img src="img/Google.svg" alt="">
+            </div>
+        </section>
+
     <main>
 
 
@@ -137,5 +153,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
